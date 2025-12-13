@@ -6,6 +6,30 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <input type="text" id="ip" placeholder="Enter task"><br><br>
+    <button id="btn">ADD TEXT</button>
+
+    <ul id="list"></ul>
+
+
+    <script>
+
+        document.getElementById("btn").addEventListener("click",function(){
+            let task=document.getElementById('ip').value;
+            if (task===''){
+                alert("Please enter a task!");
+                return;
+            }
+            let li=document.createElement("li");
+            li.innerText=task;
+            document.getElementById("list").appendChild(li);
+            
+        });
+
+
+
+    </script>
+
+
 </body>
 </html>
