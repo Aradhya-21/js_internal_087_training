@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span id="space">0</span>
+    <br>
+    <br>
+    <button id="btn1">+ Increase</button>
+    <button id="btn2">- Decrease</button>
+    
+    <script>
+        let count=0
+        document.getElementById("btn1").addEventListener("click",function(){
+            count++;
+            document.getElementById("space").innerText=count;
+        });
+        document.getElementById("btn2").addEventListener("click",function(){
+            if(count>0){
+                count--;
+                document.getElementById("space").innerText=count;
+
+            }
+        });
+    </script>
+</body>
+</html>
