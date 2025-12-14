@@ -75,3 +75,5 @@ let names=["ram","shyam","mohan"];
 let upper=names.map(n=>n.toUpperCase())
 
 console.log(upper)
+
+
