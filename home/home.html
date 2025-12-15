@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        /* ===== HEADER ===== */
+        .header {
+            height: 110px;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: white;
+            position: relative;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .header img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: white;
+            padding: 5px;
+        }
+
+        .left-img {
+            position: absolute;
+            left: 15px;
+            top: 15px;
+        }
+
+        .right-img {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+        }
+
+        .heading {
+            text-align: center;
+            padding-top: 35px;
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        /* ===== CONTENT AREA ===== */
+        .content {
+            display: flex;
+            margin: 20px;
+            gap: 15px;
+        }
+
+        .menu, .notice, .login {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        /* MENU */
+        .menu {
+            width: 20%;
+        }
+
+        .menu h3 {
+            border-bottom: 2px solid #2a5298;
+            padding-bottom: 8px;
+        }
+
+        .menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu li {
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #e8eef8;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .menu li:hover {
+            background-color: #2a5298;
+            color: white;
+        }
+
+        /* NOTICE */
+        .notice {
+            width: 40%;
+        }
+
+        .notice h3 {
+            color: #2a5298;
+        }
+
+        .notice p {
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        /* LOGIN */
+        .login {
+            width: 40%;
+        }
+
+        .login h3 {
+            color: #2a5298;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input {
+            width: 95%;
+            padding: 8px;
+            margin: 8px 0 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #2a5298;
+        }
+
+        button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #2a5298;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #1e3c72;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <div class="header">
+        <img src="img1.jpg" class="left-img" alt="Left Image">
+        <div class="heading">My Website Home Page</div>
+        <img src="img1.jpg" class="right-img" alt="Right Image">
+    </div>
+
+    <!-- ===== CONTENT ===== -->
+    <div class="content">
+
+        <!-- MENU -->
+        <div class="menu">
+            <h3>Menu</h3>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+
+        <!-- NOTICE -->
+        <div class="notice">
+            <h3>Notice Board</h3>
+            <p>
+                📢 Welcome to our website.<br>
+                🆕 New registrations are open.<br>
+                🔔 Check updates regularly.
+            </p>
+        </div>
+
+        <!-- LOGIN / REGISTRATION -->
+        <div class="login">
+            <h3>Login / Registration</h3>
+
+            <a href="login.html">
+                <button type="button">Login</button>
+            </a>
+            <br>
+            <br>
+
+            <a href="register.html">
+                <button type="button">Register</button>
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>

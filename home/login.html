@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        /* ===== HEADER ===== */
+        .header {
+            height: 110px;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: white;
+            position: relative;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .header img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: white;
+            padding: 5px;
+        }
+
+        .left-img {
+            position: absolute;
+            left: 15px;
+            top: 15px;
+        }
+
+        .right-img {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+        }
+
+        .heading {
+            text-align: center;
+            padding-top: 35px;
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        /* ===== LOGIN CARD ===== */
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 110px);
+        }
+
+        .login-card {
+            width: 350px;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+        }
+
+        .login-card h2 {
+            text-align: center;
+            color: #2a5298;
+            margin-bottom: 25px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 18px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #2a5298;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #2a5298;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #1e3c72;
+        }
+
+        .back-link {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .back-link a {
+            text-decoration: none;
+            color: #2a5298;
+            font-weight: bold;
+        }
+
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <div class="header">
+        <img src="img1.jpg" class="left-img" alt="Left Image">
+        <div class="heading">Login Page</div>
+        <img src="img1.jpg" class="right-img" alt="Right Image">
+    </div>
+
+    <!-- ===== LOGIN FORM ===== -->
+    <div class="login-container">
+        <div class="login-card">
+
+            <h2>User Login</h2>
+
+            <form>
+                <label>User ID</label>
+                <input type="text" required>
+
+                <label>Password</label>
+                <input type="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+
+            <div class="back-link">
+                <a href="home.html">← Back to Home</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
