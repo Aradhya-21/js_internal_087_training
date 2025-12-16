@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Example</title>
+</head>
+<body>
+
+    <form action=""></form>
+    
+
+
+    <script>
+        document.getElementById("fid").addEventListener("submit", function(){
+            event.preventDefault(); //stop page reload
+            let name = document.getElementById("uid").value.trim();
+            let error = document.getElementById('err');
+
+            if (name==""){
+                error.innerHTML="Name is Required";
+                return;
+            }
+            else{
+                error.style.color="green";
+                error.innerHTML="Form submit button fully";
+                this.submit();
+            }
+        })
+    </script>
+</body>
+</html>
